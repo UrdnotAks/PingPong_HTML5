@@ -234,7 +234,9 @@ function render() {
         drawNet();
         player.draw();
         com.draw();
-        ball.draw();
+        if (gameState == "running") {
+            ball.draw();
+        }
         if (gameState != "running") {
             ctx.drawImage(image, canvas.width / 2 - 32, canvas.height / 2 - 32 + 25);
         }
