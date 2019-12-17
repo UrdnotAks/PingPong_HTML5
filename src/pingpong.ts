@@ -1,3 +1,6 @@
+// Wherever +25 is used for positions of objects, it is to account for the 50px space to display score on canvas
+
+
 class Ball{
     x: number;
     y: number;
@@ -364,6 +367,7 @@ function mouseClickHandler(event: MouseEvent): void{
     if(gameState == "gameOver"){
         init();
     }
+    // +32 is to account for the size of the png file(64 x 64)
     else if( (relativeX > canvas.width/2-32 && relativeX < canvas.width/2+32 && relativeY > canvas.height/2-32+25 && relativeY < canvas.height/2+64+25) && gameState == "paused" ){
         gameState = "running"
     }
