@@ -9,3 +9,4 @@ There is still a couple of bugs needed to be fixed.
 
 1. The Button UI is not fine tuned and the player has to press the center of the button to get it to work.
 2. When the ball moves along the edge of the window, it won't bounce off like you'd expect and just attaches itself to the boundary line which makes the ball bounce off the player and computer's paddle indefinitely. The WORKAROUND for this is the player has to lose a point, which resets the position of the ball.
+3. This is not technically a bug, but there are a lot of global variables dangling all over the code, which is so not good.
